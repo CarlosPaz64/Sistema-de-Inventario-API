@@ -1,13 +1,14 @@
 /* CREACIÓN DE LA PRIMERA ENTIDAD DE NUESTRO SISTEMA */
 export interface Producto {
-     id: number;
+     id_producto: number;
      nombre: string;
      descripcion: string;
      cantidad: number;
      estatus: string;
-     imei: number;
-     fotografia1: string;
-     fotografia2: string;
-     fecha_creacion: Date;
-     fecha_modificacion: Date;
+     imei?: string;
+     fotografia1?: string;
+     fotografia2?: string;
+     fecha_creacion?: Date;
+     fecha_modificacion?: Date;
+     // Los campos de las fechas son opcionales ya que la base de datos los puede asignar automáticamente
 }

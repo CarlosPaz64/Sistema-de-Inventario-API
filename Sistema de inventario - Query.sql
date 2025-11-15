@@ -5,8 +5,9 @@ USE inventario;
 
 CREATE TABLE IF NOT EXISTS usuarios (
 	id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
-    correo VARCHAR(255) NOT NULL UNIQUE,
-    contrasenia VARCHAR(255) NOT NULL
+    usuario VARCHAR(255) NOT NULL UNIQUE,
+    contrasenia VARCHAR(255) NOT NULL,
+    foto_de_perfil LONGBLOB
 );
 
 CREATE TABLE IF NOT EXISTS productos (
